@@ -14,6 +14,8 @@ enable_testing()
 # Target Executables
 set(target c1_1)
 add_executable(${target} ${CHAP1_DIR}/1-1.c)
+set(target c1_2)
+add_executable(${target} ${CHAP1_DIR}/1-2.c)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
