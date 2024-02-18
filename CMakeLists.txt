@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.21.0)
+project(c_prog_lang VERSION 0.1.0 LANGUAGES C)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
+set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/main)
+
+# Source Directories
+set(CHAP1_DIR ${SOURCE_DIR}/chap1)
+set(CHAP2_DIR ${SOURCE_DIR}/chap2)
+
+include(CTest)
+enable_testing()
+
+# Target Executables
+set(target c1_1)
+add_executable(${target} ${CHAP1_DIR}/1-1.c)
+
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
