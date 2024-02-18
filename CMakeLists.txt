@@ -18,6 +18,8 @@ set(target c1_2)
 add_executable(${target} ${CHAP1_DIR}/1-2.c)
 set(target c1_3)
 add_executable(${target} ${CHAP1_DIR}/1-3.c)
+set(target c1_4)
+add_executable(${target} ${CHAP1_DIR}/1-4.c)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
