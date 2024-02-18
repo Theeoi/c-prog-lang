@@ -5,7 +5,8 @@ Experiment to find out what happens when printf's argument string contains \c, w
 
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     printf("\\hello,\i  \bworld\t!\n");
 
     return 0;

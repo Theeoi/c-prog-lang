@@ -5,7 +5,8 @@ Run the "hello, world" program on your system. Experiment with leaving out parts
 
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     printf("hello, world!\n");
 
     return 0;
