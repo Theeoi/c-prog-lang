@@ -5,11 +5,10 @@ easy to draw the histogram with the bars horizontal; a vertical orientation is
 more challenging.
 */
 
-#include <ctype.h>
 #include <stdio.h>
 
-#define START_CHAR 'a'
-#define END_CHAR 'z'
+#define START_CHAR '!'
+#define END_CHAR '~'
 #define NUM_CHAR END_CHAR - START_CHAR + 1
 
 int main()
@@ -24,7 +23,6 @@ int main()
 
     while ((c = getchar()) != EOF)
     {
-        c = tolower(c); /* To handle both upper- and lowercase characters */
         if (c >= START_CHAR && c <= END_CHAR)
         {
             ++c_hist[c - START_CHAR];
