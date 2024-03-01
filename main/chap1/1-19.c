@@ -1,7 +1,7 @@
 /*
-Exercise 1-18.
-Write a program to remove trailing blanks and tabs from each line of input, and
-to delete entirely blank lines.
+Exercise 1-19.
+Write a function reverse(s) that reverses the character string s. Use it to
+write a program that reverses its input a line at a time.
 */
 
 #include <stdio.h>
@@ -11,16 +11,15 @@ to delete entirely blank lines.
 #define MAXLINE 1000
 
 int get_line(char line[], int maxline);
-void reverse(char line[], int line_length);
+void reverse(char line[]);
 
 int main()
 {
-    int len;
     char line[MAXLINE];
 
-    while ((len = get_line(line, MAXLINE)) > 0)
+    while ((get_line(line, MAXLINE)) > 0)
     {
-        reverse(line, len);
+        reverse(line);
 
         printf("%s", line);
     }
@@ -45,10 +44,16 @@ int get_line(char s[], int lim)
     return i;
 }
 
-void reverse(char s[], int len)
+void reverse(char s[])
 {
-
+    int len = 0;
     int nl = FALSE;
+    char temp;
+
+    while (s[len] != '\0')
+    {
+        ++len;
+    }
 
     if (s[len - 1] == '\n')
     {
@@ -56,8 +61,6 @@ void reverse(char s[], int len)
         --len;
         nl = TRUE;
     }
-
-    char temp;
 
     for (int i = 0, j = len - 1; i < len / 2; i++, j--)
     {
