@@ -50,6 +50,8 @@ set(target c1_18)
 add_executable(${target} ${CHAP1_DIR}/1-18.c)
 set(target c1_19)
 add_executable(${target} ${CHAP1_DIR}/1-19.c)
+set(target c1_20)
+add_executable(${target} ${CHAP1_DIR}/1-20.c)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
