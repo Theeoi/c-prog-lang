@@ -10,8 +10,6 @@ which should be given preference?
 
 #define MAX_LINE_LENGTH 1000
 #define TAB_SPACE 4
-#define TRUE 1
-#define FALSE 0
 
 int get_line(char line[], int max_line_length);
 void entab(char line[]);
