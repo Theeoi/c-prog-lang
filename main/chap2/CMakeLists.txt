@@ -1,0 +1,1 @@
+add_executable(c2_1 2-1.c)
