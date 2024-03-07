@@ -8,7 +8,6 @@ the various floating-point types.
 
 #include <float.h>
 #include <limits.h>
-#include <math.h>
 #include <stdio.h>
 
 int main()
