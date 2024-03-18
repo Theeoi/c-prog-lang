@@ -4,7 +4,6 @@ Write a function invert(x, p, n) that returns x with the n bits that begin a
 position p inverted (i.e. 1 changed to 0 and vice versa), leaving the others unchanged.
 */
 
-#include <ctype.h>
 #include <stdio.h>
 
 unsigned int invert(unsigned int x, int p, int n);
